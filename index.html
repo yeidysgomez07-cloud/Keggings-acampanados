@@ -124,7 +124,7 @@ document.getElementById("pedidoForm").addEventListener("submit", function(e) {
       const rating = document.querySelector('input[name="rating"]:checked')?.value || "";
       const comentario = document.getElementById("comentario").value;
 
-      const mensaje = `*Hola, DreamShop!:*\n*Nombre:* ${nombre}\n*Teléfono:* ${telefono}\n*Correo:* ${correo}\n*Talla:* ${talla}\n*Color:* ${color}\n*Mensajería:* ${mensajeria}\n*Dirección:* ${direccion}\n*Preferencias:* ${preferencias}\n*Calificación:* ${rating}\n*Comentario:* ${comentario}`;
+      const mensaje = `*Hola, DreamShop!:*\n*Pedido: Leggings Acampanados*\n*Nombre:* ${nombre}\n*Teléfono:* ${telefono}\n*Correo:* ${correo}\n*Talla:* ${talla}\n*Color:* ${color}\n*Mensajería:* ${mensajeria}\n*Dirección:* ${direccion}\n*Preferencias:* ${preferencias}\n*Calificación:* ${rating}\n*Comentario:* ${comentario}`;
       
       const url = `https://wa.me/5359734677?text=${encodeURIComponent(mensaje)}`;
       window.open(url, "_blank");
